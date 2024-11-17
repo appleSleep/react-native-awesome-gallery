@@ -416,12 +416,12 @@ const ResizableImage = React.memo(
 
         setAdjustedFocal({ focalX, focalY });
 
-        translation.x.value =
-          adjustedFocal.x.value +
-          ((-1 * nextScale) / scaleOffset.value) * origin.x.value;
-        translation.y.value =
-          adjustedFocal.y.value +
-          ((-1 * nextScale) / scaleOffset.value) * origin.y.value;
+        // translation.x.value =
+        //   adjustedFocal.x.value +
+        //   ((-1 * nextScale) / scaleOffset.value) * origin.x.value;
+        // translation.y.value =
+        //   adjustedFocal.y.value +
+        //   ((-1 * nextScale) / scaleOffset.value) * origin.y.value;
       })
       .onEnd(() => {
         'worklet';
