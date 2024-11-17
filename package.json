@@ -1,5 +1,5 @@
 {
-  "name": "react-native-awesome-gallery",
+  "name": "react-native-awesome-gallery-fixed",
   "version": "0.4.3",
   "description": "Awesome gallery with Reanimated v2",
   "main": "lib/commonjs/index",
@@ -38,16 +38,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavelbabenko/react-native-awesome-gallery.git"
+    "url": "git+https://github.com/appleSleep/react-native-awesome-gallery.git"
   },
-  "author": "pavelbabenko <pavelbabenko01@gmail.com> (https://github.com/pavelbabenko)",
+  "author": "pavelbabenko <pavelbabenko01@gmail.com> (https://github.com/pavelbabenko) fixBy appleSleep",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavelbabenko/react-native-awesome-gallery/issues"
+    "url": "https://github.com/appleSleep/react-native-awesome-gallery/issues"
   },
-  "homepage": "https://github.com/pavelbabenko/react-native-awesome-gallery#readme",
+  "homepage": "https://github.com/appleSleep/react-native-awesome-gallery#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -86,7 +87,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && yarn typescript"
+      "pre-commit": "npm run lint && npm run typescript"
     }
   },
   "release-it": {

@@ -706,7 +706,7 @@ const ResizableImage = React.memo(
           const newWidth = scale.value * layout.x.value;
 
           isMoving.x.value = 1;
-          offset.x.value = withDecaySpring(
+          (offset.x.value as any) = withDecaySpring(
             {
               velocity: velocityX,
               clamp: [
@@ -733,7 +733,7 @@ const ResizableImage = React.memo(
 
         if (newHeight > height) {
           isMoving.y.value = 1;
-          offset.y.value = withDecaySpring(
+          (offset.y.value as any) = withDecaySpring(
             {
               velocity: velocityY,
               clamp: [
